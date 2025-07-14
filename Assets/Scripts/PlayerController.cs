@@ -20,12 +20,14 @@ public class PlayerController: MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vuelo();
-            anim.SetBool("isFliying",true); // Cambia el trigger del animador al volar
+            anim.SetBool("isFliying", true); // Cambia el trigger del animador al volar
+            Debug.Log("Se ha pulsado el botón izquierdo del ratón, ESTA VOLANDO");
 
         }
         else
         {
-            anim.SetBool("isFliying",false); // Cambia el trigger del animador al estar en reposo
+            anim.SetBool("isFliying", false); // Cambia el trigger del animador al estar en reposo
+            Debug.Log("No se ha pulsado el botón izquierdo del ratón");
         }
     }
 
